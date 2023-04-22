@@ -18,12 +18,6 @@
 		FB98AF0129F43B6900393955 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB98AF0029F43B6900393955 /* AppDelegate.swift */; };
 		FB98AF0329F43B6900393955 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB98AF0229F43B6900393955 /* GameViewController.swift */; };
 		FB98AF0629F43B6900393955 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB98AF0429F43B6900393955 /* Main.storyboard */; };
-		FB98AF0829F43B6900393955 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = FB98AED529F43B6700393955 /* Actions.sks */; };
-		FB98AF0929F43B6900393955 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = FB98AED529F43B6700393955 /* Actions.sks */; };
-		FB98AF0A29F43B6900393955 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = FB98AED529F43B6700393955 /* Actions.sks */; };
-		FB98AF0B29F43B6900393955 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = FB98AED629F43B6700393955 /* GameScene.sks */; };
-		FB98AF0C29F43B6900393955 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = FB98AED629F43B6700393955 /* GameScene.sks */; };
-		FB98AF0D29F43B6900393955 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = FB98AED629F43B6700393955 /* GameScene.sks */; };
 		FB98AF0E29F43B6900393955 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB98AED729F43B6700393955 /* GameScene.swift */; };
 		FB98AF0F29F43B6900393955 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB98AED729F43B6700393955 /* GameScene.swift */; };
 		FB98AF1029F43B6900393955 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB98AED729F43B6700393955 /* GameScene.swift */; };
@@ -33,8 +27,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		FB98AED529F43B6700393955 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
-		FB98AED629F43B6700393955 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		FB98AED729F43B6700393955 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		FB98AED829F43B6900393955 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB98AEDD29F43B6900393955 /* DombaTowers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DombaTowers.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -93,8 +85,6 @@
 		FB98AED429F43B6700393955 /* DombaTowers Shared */ = {
 			isa = PBXGroup;
 			children = (
-				FB98AED529F43B6700393955 /* Actions.sks */,
-				FB98AED629F43B6700393955 /* GameScene.sks */,
 				FB98AED729F43B6700393955 /* GameScene.swift */,
 				FB98AED829F43B6900393955 /* Assets.xcassets */,
 			);
@@ -244,9 +234,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB98AF0B29F43B6900393955 /* GameScene.sks in Resources */,
 				FB98AEE629F43B6900393955 /* Main.storyboard in Resources */,
-				FB98AF0829F43B6900393955 /* Actions.sks in Resources */,
 				FB98AEE929F43B6900393955 /* LaunchScreen.storyboard in Resources */,
 				FB98AF1129F43B6900393955 /* Assets.xcassets in Resources */,
 			);
@@ -256,9 +244,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB98AF0C29F43B6900393955 /* GameScene.sks in Resources */,
 				FB98AEF629F43B6900393955 /* Main.storyboard in Resources */,
-				FB98AF0929F43B6900393955 /* Actions.sks in Resources */,
 				FB98AEF929F43B6900393955 /* LaunchScreen.storyboard in Resources */,
 				FB98AF1229F43B6900393955 /* Assets.xcassets in Resources */,
 			);
@@ -269,9 +255,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB98AF0629F43B6900393955 /* Main.storyboard in Resources */,
-				FB98AF0D29F43B6900393955 /* GameScene.sks in Resources */,
 				FB98AF1329F43B6900393955 /* Assets.xcassets in Resources */,
-				FB98AF0A29F43B6900393955 /* Actions.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,119 +7,97 @@
 
 import SpriteKit
 
-class GameScene: SKScene {
+class GameScene: SKScene
+{
     
-    
-    fileprivate var label : SKLabelNode?
-    fileprivate var spinnyNode : SKShapeNode?
+    var playerNodeAdded = false
 
     
-    class func newGameScene() -> GameScene {
-        // Load 'GameScene.sks' as an SKScene.
-        guard let scene = SKScene(fileNamed: "GameScene") as? GameScene else {
-            print("Failed to load GameScene.sks")
-            abort()
-        }
+    // Life cycle method in sprite kit framework that is called
+    // when the scene is first presented - in this case
+    // we will simply call our grid creation method
+    override func didMove(to view: SKView)
+    {
+        let gridSize = CGSize(width: view.frame.width * 0.8,
+                              height: view.frame.height * 0.8)
+        let gridPosition = CGPoint(x: view.frame.midX, y: view.frame.midY)
+        let grid = CreateGrid(size: gridSize)
+        grid.position = gridPosition
+        addChild(grid)
         
-        // Set the scale mode to scale to fit the window
-        scene.scaleMode = .aspectFill
-        
-        return scene
-    }
-    
-    func setUpScene() {
-        // Get label node from scene and store it for use later
-        self.label = self.childNode(withName: "//helloLabel") as? SKLabelNode
-        if let label = self.label {
-            label.alpha = 0.0
-            label.run(SKAction.fadeIn(withDuration: 2.0))
-        }
-        
-        // Create shape node to use during mouse interaction
-        let w = (self.size.width + self.size.height) * 0.05
-        self.spinnyNode = SKShapeNode.init(rectOf: CGSize.init(width: w, height: w), cornerRadius: w * 0.3)
-        
-        if let spinnyNode = self.spinnyNode {
-            spinnyNode.lineWidth = 4.0
-            spinnyNode.run(SKAction.repeatForever(SKAction.rotate(byAngle: CGFloat(Double.pi), duration: 1)))
-            spinnyNode.run(SKAction.sequence([SKAction.wait(forDuration: 0.5),
-                                              SKAction.fadeOut(withDuration: 0.5),
-                                              SKAction.removeFromParent()]))
-        }
-    }
-    
-    override func didMove(to view: SKView) {
-        self.setUpScene()
+        SpawnEnemy(gridNode: grid)
     }
 
-    func makeSpinny(at pos: CGPoint, color: SKColor) {
-        if let spinny = self.spinnyNode?.copy() as! SKShapeNode? {
-            spinny.position = pos
-            spinny.strokeColor = color
-            self.addChild(spinny)
+    
+    func CreateGrid(size: CGSize) -> SKNode
+    {
+        let gridPadding: CGFloat = 25.0 // adjust as necessary
+        let gridSize = CGSize(width: size.width - gridPadding * 2,
+                              height: size.height - gridPadding * 2)
+        
+        let gridNode = SKShapeNode(rect: CGRect(origin: CGPoint(x: -gridSize.width / 2, y: -gridSize.height / 2), size: gridSize))
+        gridNode.strokeColor = .black
+        gridNode.lineWidth = 5.0
+        gridNode.fillColor = .clear
+        gridNode.position = CGPoint(x: size.width / 2, y: size.height / 2)
+        
+        let numRows = 4
+        let numCols = 3
+        let tileSpacing: CGFloat = 5.0
+        
+        
+        let tileSize = CGSize(
+            width: (gridSize.width - CGFloat(numCols - 1) * tileSpacing) / CGFloat(numCols),
+            height: (gridSize.height - CGFloat(numRows - 1) * tileSpacing) / CGFloat(numRows)
+        )
+    
+        let tileColor = UIColor.systemGreen
+        
+        for row in 0..<numRows {
+            for col in 0..<numCols {
+                let tile = SKSpriteNode(color: tileColor, size: tileSize)
+                tile.position = CGPoint(
+                    x: -gridSize.width / 2 + tileSize.width / 2 + CGFloat(col) * (tileSize.width + tileSpacing),
+                    y: -gridSize.height / 2 + tileSize.height / 2 + CGFloat(row) * (tileSize.height + tileSpacing)
+                )
+                gridNode.addChild(tile)
+            }
         }
+        
+        return gridNode
     }
+    
+    func SpawnEnemy(gridNode: SKNode)
+    {
+        let enemySize = CGSize(width: 40, height: 40)
+        let enemy = SKSpriteNode(color: .red, size: enemySize)
+
+        let gridPosition = gridNode.position
+        let gridSize = gridNode.frame.size
+        let padding: CGFloat = 10.0
+
+        let enemyX = gridPosition.x + gridSize.width / 2 + enemySize.width / 2 + padding
+        let enemyY = gridPosition.y - gridSize.height / 2 - enemySize.height / 2 - padding
+        enemy.position = CGPoint(x: enemyX, y: enemyY)
+
+        let moveUp = SKAction.moveBy(x: 0, y: gridSize.height + enemySize.height + 2 * padding, duration: 4.0 * Double(gridSize.height / (gridSize.height + gridSize.width)))
+        let moveLeft = SKAction.moveBy(x: -(gridSize.width + enemySize.width + 2 * padding), y: 0, duration: 4.0 * Double(gridSize.width / (gridSize.height + gridSize.width)))
+        let moveDown = SKAction.moveBy(x: 0, y: -(gridSize.height + enemySize.height + 2 * padding), duration: 4.0 * Double(gridSize.height / (gridSize.height + gridSize.width)))
+        let moveRight = SKAction.moveBy(x: gridSize.width + enemySize.width + 2 * padding, y: 0, duration: 4.0 * Double(gridSize.width / (gridSize.height + gridSize.width)))
+
+        let moveSequence = SKAction.sequence([moveUp, moveLeft, moveDown, moveRight])
+        let repeatAction = SKAction.repeatForever(moveSequence)
+        enemy.run(repeatAction)
+
+        addChild(enemy)
+    }
+
+
+
+    
     
     override func update(_ currentTime: TimeInterval) {
         // Called before each frame is rendered
     }
 }
-
-#if os(iOS) || os(tvOS)
-// Touch-based event handling
-extension GameScene {
-
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        if let label = self.label {
-            label.run(SKAction.init(named: "Pulse")!, withKey: "fadeInOut")
-        }
-        
-        for t in touches {
-            self.makeSpinny(at: t.location(in: self), color: SKColor.green)
-        }
-    }
-    
-    override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
-        for t in touches {
-            self.makeSpinny(at: t.location(in: self), color: SKColor.blue)
-        }
-    }
-    
-    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
-        for t in touches {
-            self.makeSpinny(at: t.location(in: self), color: SKColor.red)
-        }
-    }
-    
-    override func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) {
-        for t in touches {
-            self.makeSpinny(at: t.location(in: self), color: SKColor.red)
-        }
-    }
-    
-   
-}
-#endif
-
-#if os(OSX)
-// Mouse-based event handling
-extension GameScene {
-
-    override func mouseDown(with event: NSEvent) {
-        if let label = self.label {
-            label.run(SKAction.init(named: "Pulse")!, withKey: "fadeInOut")
-        }
-        self.makeSpinny(at: event.location(in: self), color: SKColor.green)
-    }
-    
-    override func mouseDragged(with event: NSEvent) {
-        self.makeSpinny(at: event.location(in: self), color: SKColor.blue)
-    }
-    
-    override func mouseUp(with event: NSEvent) {
-        self.makeSpinny(at: event.location(in: self), color: SKColor.red)
-    }
-
-}
-#endif
 

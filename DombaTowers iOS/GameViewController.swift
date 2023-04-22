@@ -7,24 +7,34 @@
 
 import UIKit
 import SpriteKit
-import GameplayKit
 
-class GameViewController: UIViewController {
-
+class GameViewController: UIViewController
+{
+    
+    var skView: SKView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let scene = GameScene.newGameScene()
-
-        // Present the scene
-        let skView = self.view as! SKView
+        // Remove any previously added SKView
+        skView?.removeFromSuperview()
+        
+        // Create SKView and add to view hierarchy
+        skView = SKView(frame: view.bounds)
+        skView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        view.addSubview(skView)
+        
+        // Create GameScene and present in SKView
+        let scene = GameScene(size: skView.bounds.size)
+        scene.scaleMode = .aspectFill
         skView.presentScene(scene)
         
+        // Configure SKView properties
         skView.ignoresSiblingOrder = true
         skView.showsFPS = true
         skView.showsNodeCount = true
     }
-
+    
     override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
         if UIDevice.current.userInterfaceIdiom == .phone {
             return .allButUpsideDown
@@ -32,8 +42,9 @@ class GameViewController: UIViewController {
             return .all
         }
     }
-
+    
     override var prefersStatusBarHidden: Bool {
         return true
     }
 }
+
