@@ -1,0 +1,682 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FB98AEE129F43B6900393955 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB98AEE029F43B6900393955 /* AppDelegate.swift */; };
+		FB98AEE329F43B6900393955 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB98AEE229F43B6900393955 /* GameViewController.swift */; };
+		FB98AEE629F43B6900393955 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB98AEE429F43B6900393955 /* Main.storyboard */; };
+		FB98AEE929F43B6900393955 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB98AEE729F43B6900393955 /* LaunchScreen.storyboard */; };
+		FB98AEF129F43B6900393955 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB98AEF029F43B6900393955 /* AppDelegate.swift */; };
+		FB98AEF329F43B6900393955 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB98AEF229F43B6900393955 /* GameViewController.swift */; };
+		FB98AEF629F43B6900393955 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB98AEF429F43B6900393955 /* Main.storyboard */; };
+		FB98AEF929F43B6900393955 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB98AEF729F43B6900393955 /* LaunchScreen.storyboard */; };
+		FB98AF0129F43B6900393955 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB98AF0029F43B6900393955 /* AppDelegate.swift */; };
+		FB98AF0329F43B6900393955 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB98AF0229F43B6900393955 /* GameViewController.swift */; };
+		FB98AF0629F43B6900393955 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB98AF0429F43B6900393955 /* Main.storyboard */; };
+		FB98AF0829F43B6900393955 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = FB98AED529F43B6700393955 /* Actions.sks */; };
+		FB98AF0929F43B6900393955 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = FB98AED529F43B6700393955 /* Actions.sks */; };
+		FB98AF0A29F43B6900393955 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = FB98AED529F43B6700393955 /* Actions.sks */; };
+		FB98AF0B29F43B6900393955 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = FB98AED629F43B6700393955 /* GameScene.sks */; };
+		FB98AF0C29F43B6900393955 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = FB98AED629F43B6700393955 /* GameScene.sks */; };
+		FB98AF0D29F43B6900393955 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = FB98AED629F43B6700393955 /* GameScene.sks */; };
+		FB98AF0E29F43B6900393955 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB98AED729F43B6700393955 /* GameScene.swift */; };
+		FB98AF0F29F43B6900393955 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB98AED729F43B6700393955 /* GameScene.swift */; };
+		FB98AF1029F43B6900393955 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB98AED729F43B6700393955 /* GameScene.swift */; };
+		FB98AF1129F43B6900393955 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB98AED829F43B6900393955 /* Assets.xcassets */; };
+		FB98AF1229F43B6900393955 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB98AED829F43B6900393955 /* Assets.xcassets */; };
+		FB98AF1329F43B6900393955 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB98AED829F43B6900393955 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FB98AED529F43B6700393955 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
+		FB98AED629F43B6700393955 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		FB98AED729F43B6700393955 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		FB98AED829F43B6900393955 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FB98AEDD29F43B6900393955 /* DombaTowers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DombaTowers.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB98AEE029F43B6900393955 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FB98AEE229F43B6900393955 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		FB98AEE529F43B6900393955 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FB98AEE829F43B6900393955 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FB98AEEE29F43B6900393955 /* DombaTowers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DombaTowers.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB98AEF029F43B6900393955 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FB98AEF229F43B6900393955 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		FB98AEF529F43B6900393955 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FB98AEF829F43B6900393955 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FB98AEFE29F43B6900393955 /* DombaTowers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DombaTowers.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB98AF0029F43B6900393955 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FB98AF0229F43B6900393955 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		FB98AF0529F43B6900393955 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FB98AF0729F43B6900393955 /* DombaTowers_macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DombaTowers_macOS.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FB98AEDA29F43B6900393955 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB98AEEB29F43B6900393955 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB98AEFB29F43B6900393955 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FB98AECF29F43B6600393955 = {
+			isa = PBXGroup;
+			children = (
+				FB98AED429F43B6700393955 /* DombaTowers Shared */,
+				FB98AEDF29F43B6900393955 /* DombaTowers iOS */,
+				FB98AEEF29F43B6900393955 /* DombaTowers tvOS */,
+				FB98AEFF29F43B6900393955 /* DombaTowers macOS */,
+				FB98AEDE29F43B6900393955 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FB98AED429F43B6700393955 /* DombaTowers Shared */ = {
+			isa = PBXGroup;
+			children = (
+				FB98AED529F43B6700393955 /* Actions.sks */,
+				FB98AED629F43B6700393955 /* GameScene.sks */,
+				FB98AED729F43B6700393955 /* GameScene.swift */,
+				FB98AED829F43B6900393955 /* Assets.xcassets */,
+			);
+			path = "DombaTowers Shared";
+			sourceTree = "<group>";
+		};
+		FB98AEDE29F43B6900393955 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FB98AEDD29F43B6900393955 /* DombaTowers.app */,
+				FB98AEEE29F43B6900393955 /* DombaTowers.app */,
+				FB98AEFE29F43B6900393955 /* DombaTowers.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FB98AEDF29F43B6900393955 /* DombaTowers iOS */ = {
+			isa = PBXGroup;
+			children = (
+				FB98AEE029F43B6900393955 /* AppDelegate.swift */,
+				FB98AEE229F43B6900393955 /* GameViewController.swift */,
+				FB98AEE429F43B6900393955 /* Main.storyboard */,
+				FB98AEE729F43B6900393955 /* LaunchScreen.storyboard */,
+			);
+			path = "DombaTowers iOS";
+			sourceTree = "<group>";
+		};
+		FB98AEEF29F43B6900393955 /* DombaTowers tvOS */ = {
+			isa = PBXGroup;
+			children = (
+				FB98AEF029F43B6900393955 /* AppDelegate.swift */,
+				FB98AEF229F43B6900393955 /* GameViewController.swift */,
+				FB98AEF429F43B6900393955 /* Main.storyboard */,
+				FB98AEF729F43B6900393955 /* LaunchScreen.storyboard */,
+			);
+			path = "DombaTowers tvOS";
+			sourceTree = "<group>";
+		};
+		FB98AEFF29F43B6900393955 /* DombaTowers macOS */ = {
+			isa = PBXGroup;
+			children = (
+				FB98AF0029F43B6900393955 /* AppDelegate.swift */,
+				FB98AF0229F43B6900393955 /* GameViewController.swift */,
+				FB98AF0429F43B6900393955 /* Main.storyboard */,
+				FB98AF0729F43B6900393955 /* DombaTowers_macOS.entitlements */,
+			);
+			path = "DombaTowers macOS";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FB98AEDC29F43B6900393955 /* DombaTowers iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB98AF1629F43B6900393955 /* Build configuration list for PBXNativeTarget "DombaTowers iOS" */;
+			buildPhases = (
+				FB98AED929F43B6900393955 /* Sources */,
+				FB98AEDA29F43B6900393955 /* Frameworks */,
+				FB98AEDB29F43B6900393955 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "DombaTowers iOS";
+			productName = "DombaTowers iOS";
+			productReference = FB98AEDD29F43B6900393955 /* DombaTowers.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FB98AEED29F43B6900393955 /* DombaTowers tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB98AF1929F43B6900393955 /* Build configuration list for PBXNativeTarget "DombaTowers tvOS" */;
+			buildPhases = (
+				FB98AEEA29F43B6900393955 /* Sources */,
+				FB98AEEB29F43B6900393955 /* Frameworks */,
+				FB98AEEC29F43B6900393955 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "DombaTowers tvOS";
+			productName = "DombaTowers tvOS";
+			productReference = FB98AEEE29F43B6900393955 /* DombaTowers.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FB98AEFD29F43B6900393955 /* DombaTowers macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB98AF1C29F43B6900393955 /* Build configuration list for PBXNativeTarget "DombaTowers macOS" */;
+			buildPhases = (
+				FB98AEFA29F43B6900393955 /* Sources */,
+				FB98AEFB29F43B6900393955 /* Frameworks */,
+				FB98AEFC29F43B6900393955 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "DombaTowers macOS";
+			productName = "DombaTowers macOS";
+			productReference = FB98AEFE29F43B6900393955 /* DombaTowers.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FB98AED029F43B6600393955 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					FB98AEDC29F43B6900393955 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					FB98AEED29F43B6900393955 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					FB98AEFD29F43B6900393955 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+				};
+			};
+			buildConfigurationList = FB98AED329F43B6600393955 /* Build configuration list for PBXProject "DombaTowers" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FB98AECF29F43B6600393955;
+			productRefGroup = FB98AEDE29F43B6900393955 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FB98AEDC29F43B6900393955 /* DombaTowers iOS */,
+				FB98AEED29F43B6900393955 /* DombaTowers tvOS */,
+				FB98AEFD29F43B6900393955 /* DombaTowers macOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FB98AEDB29F43B6900393955 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB98AF0B29F43B6900393955 /* GameScene.sks in Resources */,
+				FB98AEE629F43B6900393955 /* Main.storyboard in Resources */,
+				FB98AF0829F43B6900393955 /* Actions.sks in Resources */,
+				FB98AEE929F43B6900393955 /* LaunchScreen.storyboard in Resources */,
+				FB98AF1129F43B6900393955 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB98AEEC29F43B6900393955 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB98AF0C29F43B6900393955 /* GameScene.sks in Resources */,
+				FB98AEF629F43B6900393955 /* Main.storyboard in Resources */,
+				FB98AF0929F43B6900393955 /* Actions.sks in Resources */,
+				FB98AEF929F43B6900393955 /* LaunchScreen.storyboard in Resources */,
+				FB98AF1229F43B6900393955 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB98AEFC29F43B6900393955 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB98AF0629F43B6900393955 /* Main.storyboard in Resources */,
+				FB98AF0D29F43B6900393955 /* GameScene.sks in Resources */,
+				FB98AF1329F43B6900393955 /* Assets.xcassets in Resources */,
+				FB98AF0A29F43B6900393955 /* Actions.sks in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FB98AED929F43B6900393955 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB98AF0E29F43B6900393955 /* GameScene.swift in Sources */,
+				FB98AEE329F43B6900393955 /* GameViewController.swift in Sources */,
+				FB98AEE129F43B6900393955 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB98AEEA29F43B6900393955 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB98AF0F29F43B6900393955 /* GameScene.swift in Sources */,
+				FB98AEF329F43B6900393955 /* GameViewController.swift in Sources */,
+				FB98AEF129F43B6900393955 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB98AEFA29F43B6900393955 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB98AF1029F43B6900393955 /* GameScene.swift in Sources */,
+				FB98AF0329F43B6900393955 /* GameViewController.swift in Sources */,
+				FB98AF0129F43B6900393955 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FB98AEE429F43B6900393955 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FB98AEE529F43B6900393955 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FB98AEE729F43B6900393955 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FB98AEE829F43B6900393955 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		FB98AEF429F43B6900393955 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FB98AEF529F43B6900393955 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FB98AEF729F43B6900393955 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FB98AEF829F43B6900393955 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		FB98AF0429F43B6900393955 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FB98AF0529F43B6900393955 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FB98AF1429F43B6900393955 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FB98AF1529F43B6900393955 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		FB98AF1729F43B6900393955 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HPXD4Z7FNQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = gondolabros.DombaTowers;
+				PRODUCT_NAME = DombaTowers;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FB98AF1829F43B6900393955 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HPXD4Z7FNQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = gondolabros.DombaTowers;
+				PRODUCT_NAME = DombaTowers;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FB98AF1A29F43B6900393955 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "tvOS App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HPXD4Z7FNQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Automatic;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = gondolabros.DombaTowers;
+				PRODUCT_NAME = DombaTowers;
+				SDKROOT = appletvos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 16.4;
+			};
+			name = Debug;
+		};
+		FB98AF1B29F43B6900393955 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "tvOS App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HPXD4Z7FNQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Automatic;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = gondolabros.DombaTowers;
+				PRODUCT_NAME = DombaTowers;
+				SDKROOT = appletvos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 16.4;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FB98AF1D29F43B6900393955 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "DombaTowers macOS/DombaTowers_macOS.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HPXD4Z7FNQ;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = gondolabros.DombaTowers;
+				PRODUCT_NAME = DombaTowers;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		FB98AF1E29F43B6900393955 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "DombaTowers macOS/DombaTowers_macOS.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HPXD4Z7FNQ;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = gondolabros.DombaTowers;
+				PRODUCT_NAME = DombaTowers;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FB98AED329F43B6600393955 /* Build configuration list for PBXProject "DombaTowers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB98AF1429F43B6900393955 /* Debug */,
+				FB98AF1529F43B6900393955 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB98AF1629F43B6900393955 /* Build configuration list for PBXNativeTarget "DombaTowers iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB98AF1729F43B6900393955 /* Debug */,
+				FB98AF1829F43B6900393955 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB98AF1929F43B6900393955 /* Build configuration list for PBXNativeTarget "DombaTowers tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB98AF1A29F43B6900393955 /* Debug */,
+				FB98AF1B29F43B6900393955 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB98AF1C29F43B6900393955 /* Build configuration list for PBXNativeTarget "DombaTowers macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB98AF1D29F43B6900393955 /* Debug */,
+				FB98AF1E29F43B6900393955 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FB98AED029F43B6600393955 /* Project object */;
+}
