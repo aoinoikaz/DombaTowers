@@ -22,11 +22,13 @@ class GameViewController: UIViewController
         // Create SKView and add to view hierarchy
         skView = SKView(frame: view.bounds)
         skView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        // We need to match the sprite kit view to the screens bounds
+        skView.frame = view.bounds
         view.addSubview(skView)
         
         // Create GameScene and present in SKView
         let scene = GameScene(size: skView.bounds.size)
-        scene.scaleMode = .aspectFill
+        scene.scaleMode = .resizeFill
         skView.presentScene(scene)
         
         // Configure SKView properties

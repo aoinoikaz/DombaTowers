@@ -24,6 +24,12 @@
 		FB98AF1129F43B6900393955 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB98AED829F43B6900393955 /* Assets.xcassets */; };
 		FB98AF1229F43B6900393955 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB98AED829F43B6900393955 /* Assets.xcassets */; };
 		FB98AF1329F43B6900393955 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB98AED829F43B6900393955 /* Assets.xcassets */; };
+		FBD4904129F49B4900AF84D4 /* Grid.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD4904029F49B4900AF84D4 /* Grid.swift */; };
+		FBD4904229F49B4900AF84D4 /* Grid.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD4904029F49B4900AF84D4 /* Grid.swift */; };
+		FBD4904329F49B4900AF84D4 /* Grid.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD4904029F49B4900AF84D4 /* Grid.swift */; };
+		FBD4904529F4A0F300AF84D4 /* Tile.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD4904429F4A0F300AF84D4 /* Tile.swift */; };
+		FBD4904629F4A0F300AF84D4 /* Tile.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD4904429F4A0F300AF84D4 /* Tile.swift */; };
+		FBD4904729F4A0F300AF84D4 /* Tile.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD4904429F4A0F300AF84D4 /* Tile.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +50,8 @@
 		FB98AF0229F43B6900393955 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		FB98AF0529F43B6900393955 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FB98AF0729F43B6900393955 /* DombaTowers_macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DombaTowers_macOS.entitlements; sourceTree = "<group>"; };
+		FBD4904029F49B4900AF84D4 /* Grid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grid.swift; sourceTree = "<group>"; };
+		FBD4904429F4A0F300AF84D4 /* Tile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tile.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +95,8 @@
 			children = (
 				FB98AED729F43B6700393955 /* GameScene.swift */,
 				FB98AED829F43B6900393955 /* Assets.xcassets */,
+				FBD4904029F49B4900AF84D4 /* Grid.swift */,
+				FBD4904429F4A0F300AF84D4 /* Tile.swift */,
 			);
 			path = "DombaTowers Shared";
 			sourceTree = "<group>";
@@ -268,7 +278,9 @@
 			files = (
 				FB98AF0E29F43B6900393955 /* GameScene.swift in Sources */,
 				FB98AEE329F43B6900393955 /* GameViewController.swift in Sources */,
+				FBD4904529F4A0F300AF84D4 /* Tile.swift in Sources */,
 				FB98AEE129F43B6900393955 /* AppDelegate.swift in Sources */,
+				FBD4904129F49B4900AF84D4 /* Grid.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,7 +290,9 @@
 			files = (
 				FB98AF0F29F43B6900393955 /* GameScene.swift in Sources */,
 				FB98AEF329F43B6900393955 /* GameViewController.swift in Sources */,
+				FBD4904629F4A0F300AF84D4 /* Tile.swift in Sources */,
 				FB98AEF129F43B6900393955 /* AppDelegate.swift in Sources */,
+				FBD4904229F49B4900AF84D4 /* Grid.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,7 +302,9 @@
 			files = (
 				FB98AF1029F43B6900393955 /* GameScene.swift in Sources */,
 				FB98AF0329F43B6900393955 /* GameViewController.swift in Sources */,
+				FBD4904729F4A0F300AF84D4 /* Tile.swift in Sources */,
 				FB98AF0129F43B6900393955 /* AppDelegate.swift in Sources */,
+				FBD4904329F49B4900AF84D4 /* Grid.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
